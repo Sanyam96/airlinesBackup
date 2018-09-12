@@ -1,6 +1,7 @@
 package com.nagarro.models;
 
 /**
+ * Flight search model
  * @author Sanyam Goel created on 12/9/18
  */
 public class FlightSearchDetails {
@@ -10,6 +11,10 @@ public class FlightSearchDetails {
     private String flightDate;
     private String flightClass;
     private String sortPreference;
+
+    /**
+     * getter and setters
+     */
 
     public String getDepInput() {
         return depInput;

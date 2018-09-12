@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
+ * Login Controller to manage login screen
  * @author Sanyam Goel created on 12/9/18
  */
 @Controller
@@ -21,7 +22,7 @@ public class LoginController {
     @RequestMapping(method = RequestMethod.POST)
     public String submit(Model model, @ModelAttribute("loginBean") LoginBean loginBean) {
         if (loginBean != null && loginBean.getUserName() != null & loginBean.getPassword() != null) {
-            if (loginBean.getUserName().equals  ("user") && loginBean.getPassword().equals("user")) {
+            if (loginBean.getUserName().equals("user") && loginBean.getPassword().equals("user")) {
                 model.addAttribute("msg", loginBean.getUserName());
                 return "flights";
             } else {

@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.util.Date;
 
 /**
+ * Flight DB models
  * @author Sanyam Goel created on 11/9/18
  */
 
@@ -42,6 +43,10 @@ public class Flight {
 
     @Column(name = "class")
     private String flightClass;
+
+    /**
+     * getter and setters
+     */
 
     public int getId() {
         return id;

@@ -6,7 +6,12 @@ package com.nagarro.models;
 public class LoginBean {
 
     private String userName;
+
     private String password;
+
+    /**
+     * getter and setters
+     */
 
     public String getUserName() {
         return userName;

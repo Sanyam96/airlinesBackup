@@ -20,6 +20,10 @@ public class User {
     @Column(name = "password")
     private String password;
 
+    /**
+     * getter and setters
+     */
+
     public int getId() {
         return id;
     }
