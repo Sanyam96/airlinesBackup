@@ -42,23 +42,6 @@ public class FlightController {
      * @param modelAndView
      * @return
      */
-    @RequestMapping(method = RequestMethod.POST, value = "/search-flights")
-    public ModelAndView getSearchedFlights(
-            @ModelAttribute("flightSearchData") FlightSearchDetails flightSearchData,
-            ModelAndView modelAndView
-    ) {
-        List<Flight> flights = flightService.getAllFlights();
-        modelAndView.addObject("allFlights", flights);
-        modelAndView.setViewName("flightDetails");
-        return modelAndView;
-    }
-
-    /**
-     * Controller to search flights for input data
-     * @param flightSearchData
-     * @param modelAndView
-     * @return
-     */
     @RequestMapping(value = "/searchFlights", method = RequestMethod.POST)
     public ModelAndView searchFlights(@ModelAttribute("flightSearchData") FlightSearchDetails flightSearchData) throws ParseException {
 

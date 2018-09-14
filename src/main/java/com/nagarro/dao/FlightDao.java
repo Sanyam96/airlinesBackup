@@ -14,7 +14,5 @@ public interface FlightDao {
 
     public List<Flight> getFlights();
 
-    public List<Flight> getSearchedResultFlights();
-
-    public List<Flight> findMatchedFlight(FlightSearchDetails flightSearchDetails) throws ParseException;
+    public List<Flight> findMatchedFlight(FlightSearchDetails flightSearchDetails);
 }

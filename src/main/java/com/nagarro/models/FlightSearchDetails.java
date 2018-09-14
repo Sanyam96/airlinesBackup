@@ -7,15 +7,18 @@ package com.nagarro.models;
 public class FlightSearchDetails {
 
     private String depInput;
+
     private String arrInput;
+
     private String flightDate;
+
     private String flightClass;
+
     private String sortPreference;
 
     /**
      * getter and setters
      */
-
     public String getDepInput() {
         return depInput;
     }

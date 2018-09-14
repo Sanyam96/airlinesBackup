@@ -12,7 +12,6 @@ public class LoginBean {
     /**
      * getter and setters
      */
-
     public String getUserName() {
         return userName;
     }

@@ -14,7 +14,5 @@ public interface FlightService {
 
     public List<Flight> getAllFlights();
 
-    public List<Flight> getSearchedResults();
-
-    public List<Flight> findMatchedFlight(FlightSearchDetails flightSearchDetails) throws ParseException;
+    public List<Flight> findMatchedFlight(FlightSearchDetails flightSearchDetails);
 }

@@ -31,17 +31,13 @@ public class FlightDaoImpl implements FlightDao {
         return sessionFactory.getCurrentSession().createQuery("from Flight").list();
     }
 
-    public List<Flight> getSearchedResultFlights() {
-        return null;
-    }
-
     /**
      * List of Flight data
      * @param flightSearchData
      * @return
      * @throws ParseException
      */
-    public List<Flight> findMatchedFlight(FlightSearchDetails flightSearchData) throws ParseException {
+    public List<Flight> findMatchedFlight(FlightSearchDetails flightSearchData) {
 
         SimpleDateFormat sdf = new SimpleDateFormat(constParamsObj.datePattern);
         Date flightDate = null;

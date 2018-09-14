@@ -28,12 +28,6 @@ public class FlightServiceImpl implements FlightService {
         return flightDao.getFlights();
     }
 
-    @Transactional
-    public List<Flight> getSearchedResults() {
-        // main logic
-        return flightDao.getSearchedResultFlights();
-    }
-
     /**
      * Service function to interact with flightDao and db, repository
      * @param flightSearchDetails
@@ -41,7 +35,7 @@ public class FlightServiceImpl implements FlightService {
      * @throws ParseException
      */
     @Transactional
-    public List<Flight> findMatchedFlight(FlightSearchDetails flightSearchDetails) throws ParseException {
+    public List<Flight> findMatchedFlight(FlightSearchDetails flightSearchDetails) {
         List<Flight> flights = flightDao.findMatchedFlight(flightSearchDetails);
 
         FlightOutputType flightOutputType = null;

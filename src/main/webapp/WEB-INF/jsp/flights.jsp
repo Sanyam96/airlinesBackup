@@ -12,12 +12,29 @@
 
     <div align="center">
 		<form action="searchFlights" method="POST" modelAttribute="flightSearchData">
-        		Departure location :<input type="text" name="depInput"/><br />
-        		Arrival location<input type="text" name="arrInput"/><br />
-        		date :<input type="date" name="flightDate"/><br />
-        		class : <input type="text" name="flightClass"/><br />
-        		outputPref :<input type="text" name="sortPreference"/><br />
-        		<input type="submit">
+		    <table style="with: 50%">
+		    <tr>
+		        <td>Departure location :</td>
+		        <td><input type="text" name="depInput"/><br /></td>
+		    </tr>
+		    <tr>
+    		    <td>Arrival location</td>
+    	        <td><input type="text" name="arrInput"/></td>
+		    </tr>
+		    <tr>
+                <td>date</td>
+                <td><input type="date" name="flightDate"/></td>
+            </tr>
+            <tr>
+                <td>class</td>
+                <td><input type="text" name="flightClass"/></td>
+            </tr>
+            <tr>
+                <td>outputPref :</td>
+                <td><input type="text" name="sortPreference"/></td>
+            </tr>
+            </table>
+            <input type="submit">
         </form>
 	</div>
 

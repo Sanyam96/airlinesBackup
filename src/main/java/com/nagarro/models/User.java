@@ -23,7 +23,6 @@ public class User {
     /**
      * getter and setters
      */
-
     public int getId() {
         return id;
     }
